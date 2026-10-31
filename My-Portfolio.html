@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagesh Sheelam | Developer</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #020617, #0f172a);
+            color: white;
+        }
+        /* NAV */
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 10%;
+            position: sticky;
+            top: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        
+        nav h1 {
+            color: #38bdf8;
+        }
+        
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            color: #38bdf8;
+        }
+        /* HERO */
+        
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 10%;
+            flex-wrap: wrap;
+        }
+        
+        .hero-text {
+            max-width: 500px;
+        }
+        
+        .hero h2 {
+            font-size: 42px;
+        }
+        
+        .hero span {
+            color: #38bdf8;
+        }
+        
+        .hero img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            border: 4px solid #38bdf8;
+            box-shadow: 0 0 40px #38bdf8;
+            animation: float 3s infinite;
+        }
+        /* BUTTON */
+        
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: black;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        
+        .btn:hover {
+            transform: scale(1.1);
+        }
+        /* SECTIONS */
+        
+        section {
+            padding: 60px 10%;
+        }
+        /* CARD */
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            margin-top: 15px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+        }
+        /* SKILLS */
+        
+        .skills span {
+            display: inline-block;
+            background: #38bdf8;
+            color: black;
+            padding: 6px 12px;
+            margin: 5px;
+            border-radius: 6px;
+        }
+        /* ANIMATION */
+        
+        @keyframes float {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+        /* FOOTER */
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+        }
+        /* MOBILE */
+        
+        @media(max-width:768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <h1>Nagesh</h1>
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Hi, I'm <span>Nagesh Sheelam</span></h2>
+            <p style="color:#38bdf8;">Software Developer | Problem Solver | Quick Learner</p>
+            <p>
+                Passionate about building scalable and efficient applications using modern technologies.
+            </p>
+            <a href="mailto:work.nagesh.developer@gmail.com" class="btn">Hire Me</a>
+        </div>
+
+        <img src="My image\Nagesh_nani.jpg" height="1032" width="878" />
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                I am an aspiring software developer with a strong foundation in Java, web development, and problem-solving. Currently pursuing B.Tech in Computer Science and Engineering at Sri Indu College of Engineering and Technology, I am passionate about building
+                secure and scalable applications. I have hands-on experience in developing projects like an Explainable Federated Learning Framework for detecting advanced cyber threats in connected vehicles. My interests include cybersecurity, machine
+                learning, and modern web technologies. I continuously enhance my skills through platforms like HackerRank and GitHub, and I am eager to contribute to innovative software solutions in a professional environment.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>Java</span>
+            <span>C</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+            <span>DSA</span>
+            <span>Git</span>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>EXPLAINABLE FEDERATED FRAMEWORK FOR ENHANCED SECURITY AND PRIVACY IN CONNECTED VEHICLES AGAINST ADVANCED PERSISTENT THREATS</h3>
+            <p>
+                The project “Explainable Federated Framework for Enhanced Security and Privacy in Connected Vehicles against Advanced Persistent Threats” focuses on improving cybersecurity in IoT-enabled vehicular systems. It uses federated learning to train models locally
+                on vehicles without sharing sensitive data, ensuring privacy. The framework integrates deep neural networks for accurate detection of advanced persistent threats (APTs), which are complex and long-term cyberattacks. Additionally, Explainable
+                AI techniques are used to provide transparency in decision-making. According to the abstract in your report , the system achieves high detection accuracy while maintaining scalability, security, and data privacy in distributed vehicle
+                environments.
+            </p>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+
+        <div class="card">
+            <h3>CSS (Basic) - HackerRank</h3>
+            <p>Certified in CSS fundamentals and responsive design.</p>
+            <a href="https://www.hackerrank.com/certificates/c376ab27a2a2" target="_blank" class="btn">View Certificate</a>
+        </div>
+
+        <div class="card">
+            <h3>JavaScript (Basic) - HackerRank</h3>
+            <p>Certified in JavaScript fundamentals and problem solving.</p>
+            <a href="https://www.hackerrank.com/certificates/fe754eadd851" target="_blank" class="btn">View Certificate</a>
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+            <p>Email: work.nagesh.developer@gmail.com</p>
+            <p>GitHub: <a href="https://github.com/nani11441" target="_blank">github.com/nani11441</a></p>
+            <p>Linkdin: <a href="https://www.linkedin.com/in/sheelam-nagesh-63a8252a5" target="_blank">Linkdin.com</a></p>
+            <p>Linkdin: <a href="https://www.guvi.in/sheelamnageshnani99049" target="_blank">Guvi.com</a></p>
+            <p>Phone: 8328611441</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Nagesh Sheelam</p>
+    </footer>
+
+</body>
+
+</html>
